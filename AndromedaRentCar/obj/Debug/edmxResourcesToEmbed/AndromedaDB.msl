@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AndromedaRentCarModelStoreContainer" CdmEntityContainer="AndromedaRentCarEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Cliente">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="IdClientes" ColumnName="IdClientes" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="NoTarjetaCredito" ColumnName="NoTarjetaCredito" />
+          <ScalarProperty Name="LimiteCredito" ColumnName="LimiteCredito" />
+          <ScalarProperty Name="TipoPersona" ColumnName="TipoPersona" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Tanda" ColumnName="Tanda" />
+          <ScalarProperty Name="PorcientoComision" ColumnName="PorcientoComision" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inspeccions">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Inspeccion">
+        <MappingFragment StoreEntitySet="Inspeccion">
+          <ScalarProperty Name="IdInspeccion" ColumnName="IdInspeccion" />
+          <ScalarProperty Name="Ralladuras" ColumnName="Ralladuras" />
+          <ScalarProperty Name="CantCombustible" ColumnName="CantCombustible" />
+          <ScalarProperty Name="GomaRepuesto" ColumnName="GomaRepuesto" />
+          <ScalarProperty Name="Gato" ColumnName="Gato" />
+          <ScalarProperty Name="RoturaCristal" ColumnName="RoturaCristal" />
+          <ScalarProperty Name="GomasDelanteras" ColumnName="GomasDelanteras" />
+          <ScalarProperty Name="GomasTraseras" ColumnName="GomasTraseras" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdVehiculo" ColumnName="IdVehiculo" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Marca">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="IdMarca" ColumnName="IdMarca" />
+          <ScalarProperty Name="DescMarca" ColumnName="DescMarca" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modelos">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Modelo">
+        <MappingFragment StoreEntitySet="Modelos">
+          <ScalarProperty Name="IdModelos" ColumnName="IdModelos" />
+          <ScalarProperty Name="DescModelos" ColumnName="DescModelos" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdMarca" ColumnName="IdMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RentaDevolucions">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.RentaDevolucion">
+        <MappingFragment StoreEntitySet="RentaDevolucion">
+          <ScalarProperty Name="IdRenta" ColumnName="IdRenta" />
+          <ScalarProperty Name="FechaRenta" ColumnName="FechaRenta" />
+          <ScalarProperty Name="FechaDevolucion" ColumnName="FechaDevolucion" />
+          <ScalarProperty Name="MontoDia" ColumnName="MontoDia" />
+          <ScalarProperty Name="CantidadDias" ColumnName="CantidadDias" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="IdVehiculo" ColumnName="IdVehiculo" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCombustibles">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.TipoCombustible">
+        <MappingFragment StoreEntitySet="TipoCombustible">
+          <ScalarProperty Name="IdTipoCombustible" ColumnName="IdTipoCombustible" />
+          <ScalarProperty Name="DescTipoCombustible" ColumnName="DescTipoCombustible" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoVehiculos">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.TipoVehiculo">
+        <MappingFragment StoreEntitySet="TipoVehiculos">
+          <ScalarProperty Name="IdTipoVehiculo" ColumnName="IdTipoVehiculo" />
+          <ScalarProperty Name="DescTipoVehiculo" ColumnName="DescTipoVehiculo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="IdUsuarios" ColumnName="IdUsuarios" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPass" ColumnName="UserPass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehiculos">
+      <EntityTypeMapping TypeName="AndromedaRentCarModel.Vehiculo">
+        <MappingFragment StoreEntitySet="Vehiculos">
+          <ScalarProperty Name="IdVehiculo" ColumnName="IdVehiculo" />
+          <ScalarProperty Name="DescVehiculo" ColumnName="DescVehiculo" />
+          <ScalarProperty Name="NoChasis" ColumnName="NoChasis" />
+          <ScalarProperty Name="NoMotor" ColumnName="NoMotor" />
+          <ScalarProperty Name="NoPlaca" ColumnName="NoPlaca" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdTipoVehiculo" ColumnName="IdTipoVehiculo" />
+          <ScalarProperty Name="IdMarca" ColumnName="IdMarca" />
+          <ScalarProperty Name="IdModelo" ColumnName="IdModelo" />
+          <ScalarProperty Name="IdTipoCombustible" ColumnName="IdTipoCombustible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
